@@ -24,8 +24,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9XX-30-nMn">
                                 <rect key="frame" x="15" y="48" width="384" height="814"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRd-AC-DPg">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="614"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oC8-uW-BbK">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="71.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRd-AC-DPg">
+                                        <rect key="frame" x="0.0" y="81.5" width="384" height="532.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -85,8 +91,9 @@
                     </view>
                     <connections>
                         <outlet property="falseButton" destination="mKp-YS-f2F" id="dQ6-25-2tO"/>
-                        <outlet property="progressBarr" destination="aqG-CJ-yt4" id="0xe-AN-BND"/>
+                        <outlet property="progressBar" destination="aqG-CJ-yt4" id="0xe-AN-BND"/>
                         <outlet property="questionLabel" destination="DRd-AC-DPg" id="Rpa-yR-T5d"/>
+                        <outlet property="scoreLabel" destination="oC8-uW-BbK" id="G22-mQ-jKC"/>
                         <outlet property="trueButton" destination="TUu-Sh-Ynv" id="LSE-3L-6xX"/>
                     </connections>
                 </viewController>

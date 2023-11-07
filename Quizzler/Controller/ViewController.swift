@@ -15,12 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     
-    var quizBrain = QuizBrain()
+    private var quizBrain = QuizBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
+    
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         
         
@@ -42,9 +43,11 @@ class ViewController: UIViewController {
     }
     
     @objc func updateUI() {
-        questionLabel.text = quizBrain.answerText
+        questionLabel.text = quizBrain.questionText
+        
         trueButton.backgroundColor = UIColor.clear
         falseButton.backgroundColor = UIColor.clear
+        
         progressBar.progress = quizBrain.getProgress()
         scoreLabel.text = "Score \(quizBrain.getScore())"
     }

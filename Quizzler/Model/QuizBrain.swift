@@ -23,10 +23,11 @@ struct QuizBrain {
                 Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")
         ]
     
-    var questionNumber = 0
-    var score = 0
+    private var questionNumber = 0
     
-    var answerText: String {
+    private var score = 0
+    
+    var questionText: String {
         quiz[questionNumber].text
     }
     
